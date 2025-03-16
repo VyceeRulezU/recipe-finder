@@ -714,6 +714,7 @@ button:active {
     }
 
     .search-button {
+        width: fit-content;
         font-size: 0.8rem;
     }
 
@@ -784,4 +785,12 @@ button:active {
     .menu-toggle {
         display: none;
     }
+}
+
+@media (min-width: 370px) {
+
+   .search-button{
+        width: fit-content;
+        font-size: 0.6rem;
+   }
 }
