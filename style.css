@@ -18,7 +18,7 @@
     letter-spacing: -0.031rem;
 }
 
-.nav-bar{
+/* .nav-bar{
     display: flex;
     padding: 0.625rem 5rem;
     justify-content: space-between;
@@ -62,7 +62,107 @@
     outline: none;
     border-radius: 62.4375rem;
     background: var(--Primary-4, #FFB986);
+} */
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #333;
+    color: white;
+    position: relative;
 }
+
+/* Logo */
+.logo img {
+    width: 120px;
+}
+
+/* Desktop Navigation */
+.nav-container-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+/* Hide Mobile Menu Initially */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background: #222;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.mobile-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+.mobile-btn {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-container-right {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+}
+
 
 .body-content-wrapper{
     display: flex;
@@ -558,9 +658,27 @@ button:active {
         overflow: hidden;
     }
 
-    .nav-bar {
+    /* .nav-bar {
         padding: 0.625rem 1rem;
         background-color: #0A1002;
+    } */
+
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-container-right {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .mobile-menu.active {
+        display: flex;
     }
 
     .nav-container-right{
@@ -656,5 +774,11 @@ button:active {
 
     .card {
         min-width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
     }
 }

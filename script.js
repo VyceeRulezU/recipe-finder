@@ -2,6 +2,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.querySelector(".search-bar");
     const searchButton = document.querySelector(".search-button");
     const recipeContainer = document.querySelector(".recipe-card-wrapper");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    // Toggle mobile menu
+    menuToggle.addEventListener("click", function () {
+        mobileMenu.classList.toggle("active");
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+            mobileMenu.classList.remove("active");
+        }
+    });
+
+    // Close menu when clicking a link
+    mobileMenu.querySelectorAll("a, .mobile-btn").forEach(link => {
+        link.addEventListener("click", function () {
+            mobileMenu.classList.remove("active");
+        });
+    });
 
     // Function to perform search and redirect to search.html
     function performSearch() {
