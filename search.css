@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #FFB986;
+    --secondary-color: #0A1002;
+    --background-color: #f7f7f7;
+    --text-color: #333;
+    --font-family: "Poppins", sans-serif;
+    --font-size: 1rem;
+    --letter-spacing: -0.031rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.031rem;
+}
+
+.nav-bar{
+    display: flex;
+    padding: 0.625rem 5rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background-color: #0A1002;
+}
+
+.nav-container-right{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.nav-link{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.nav-link a{
+    color: #FFF;
+}
+
+.link{
+    text-decoration: none;
+    color: #474747;
+    font-size: 1rem;
+}
+.nav-button{
+    display: flex;
+    padding: 0.875rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border: none;
+    outline: none;
+    border-radius: 62.4375rem;
+    background: var(--Primary-4, #FFB986);
+}
+
+.body-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 5rem;
+    align-self: stretch;
+}
+
+.primary-button{
+    display: flex;
+    padding: 0.875rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border: none;
+    outline: none;
+    border-radius: 62.4375rem;
+    background: var(--Primary-4, #FFB986);
+}
+
+/* General Button Styles */
+button {
+    background-color: #ff6f61; /* Attractive red-orange */
+    color: #474747;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: #e85a50; /* Slightly darker on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: 400;
+}
+
+/* Active Effect (Clicking the Button) */
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Nav Button Specific */
+.nav-button {
+    padding: 10px 18px;
+    font-size: 14px;
+}
+
+/* Search Page Button */
+.search-button {
+    width: fit-content;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.secondary-button{
+    display: flex;
+    padding: 0.875rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border: solid;
+    outline: none;
+    border-width: 1px;
+    border-radius: 62.4375rem;
+    border-color: var(--Secondary-4, #FFB986);
+    background: #FFF;
+    /* color: #FFB986; */
+}
+
+.form-element{
+    display: flex;
+    width: 32.5rem;
+    height: 3.25rem;
+    padding: 0.125rem 0.125rem 0.125rem 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6.1875rem;
+    border: 0.5px solid var(--Black-5, #C6C6C6);
+    background: #FFF;
+    box-shadow: 8px 2px 18px 0px rgba(0, 0, 0, 0.10);
+    align-items: center;
+}
+
+.input-icon{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    align-items: center;
+    color: #ABABAB;
+}
+
+.search-bar{
+    border: none;
+}
+
+.search-bar:focus{
+    outline: none;
+}
+
+.search-button{
+    display: flex;
+    padding: 0.875rem 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    align-self: stretch;
+    border: none;
+    outline: none;
+    border-radius: 62.4375rem;
+    background: var(--Primary-4, #FFB986);
+}
+
+
+.ingredient-section{
+    display: flex;
+    height: 40vh;
+    padding: 2.5rem 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+    align-self: stretch;
+    background: #0A1002;
+}
+
+.ingredient-section h2{
+    color: var(--Black, #FFF);
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 2rem */
+}
+
+.ingredient-section p{
+    width: 50%;
+    color: var(--Black-6, #ABABAB);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 1.625rem */
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.content-wrapper h3{
+    color: var(--Black, #FFF);
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 1.4625rem */
+}
+
+.chip-wrapper{
+    width: 100%;
+    display: flex;
+    padding: 0.625rem 0rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.chip{
+    display: flex;
+   
+    width: fit-content;
+    padding: 0.75rem 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 62.4375rem;
+    border: 0.05px solid var(--Black-2, #FAFAFA);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+}
+
+.chip p{
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* .recipe-card-wrapper{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    flex: 1 0 0;
+    flex-wrap: wrap;
+    padding: 2rem;
+} */
+
+.recipe-card-wrapper {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0 auto; /* Ensures the wrapper itself is centered */
+}
+
+
+.card{
+    display: flex;
+    min-width: 11.5rem;
+    padding: var(--Number-2, 0.8rem);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    flex: 1 0 0;
+    border-radius: var(--Number-2, 0.5rem);
+    border: 0.5px solid var(--Black-3, #F1F1F1);
+    background: #FFF;
+    max-width: 25rem;
+    min-width: 20rem;
+}
+
+.img-container{
+    height: 14rem;
+    align-self: stretch;
+    border-radius: var(--Number-2, 0.5rem);
+    background: url(./images/image\ 1.svg) lightgray 50% / cover no-repeat;
+}
+
+.is2{
+    background: url(./images/image\ 2.svg) lightgray 50% / cover no-repeat;
+}
+
+.is3{
+    background: url(./images/image\ 3.svg) lightgray 50% / cover no-repeat;
+}
+
+.is4{
+    background: url(./images/image\ 4.svg) lightgray 50% / cover no-repeat;
+}
+
+.is5{
+    background: url(./images/image\ 5.svg) lightgray 50% / cover no-repeat;
+}
+
+.is6{
+    background: url(./images/image\ 6.svg) lightgray 50% / cover no-repeat;
+}
+
+.is7{
+    background: url(./images/image\ 7.svg) lightgray 50% / cover no-repeat;
+}
+
+.is8{
+    background: url(./images/image\ 8.svg) lightgray 50% / cover no-repeat;
+}
+
+.card-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFB986;
+}
+
+.footer-section{
+    height: fit-content;
+    display: flex;
+    /* height: 24rem; */
+    padding: 5rem 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+    background: var(--Secondary-4, #FFDBB1);
+    background: url(./images/Footer\ Section.svg) lightgray 50% / cover no-repeat;
+}
+
+.copy-rght{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    align-items: center;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .nav-bar {
+        padding: 0.625rem 2rem;
+    }
+
+    .hero-section {
+        padding: 0.625rem 2rem;
+    }
+
+    .pop-recipe-section {
+        padding: 10rem 2rem;
+    }
+
+    .ingredient-section {
+        padding: 2.5rem 2rem;
+    }
+
+    .explore-section {
+        padding: 2.5rem 2rem;
+    }
+
+    .footer-section {
+        padding: 2.5rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-container-right {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .header-content {
+        width: 100%;
+    }
+
+    .recipe-group {
+        width: 80vw;
+    }
+
+    .recipe-chip {
+        min-width: 100%;
+    }
+
+    .ingredient-section p {
+        width: 80%;
+    }
+
+    .content-wrapper h3 {
+        font-size: 1.5rem;
+    }
+
+    .recipe-card-wrapper {
+        width: 100%;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .body-wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .nav-bar {
+        padding: 0.625rem 1rem;
+        background-color: #0A1002;
+    }
+
+    .nav-container-right{
+        display: none;
+    }
+
+    .mobile-menu-icon i{
+        display: block;
+        color: #ABABAB;
+        font-size: 5rem;
+    }
+
+    .content-wrapper{
+        width: 100%;
+        background-size: cover;
+    }
+
+    .hero-section {
+        width: 100%;
+        height: 90vh;
+        padding: 0.625rem 1rem;
+    }
+
+    .header-content {
+        width: 100%;
+    }
+
+    .form-element{
+        width: 100%;
+    }
+
+    .pop-recipe-section {
+        padding: 5rem 1rem;
+    }
+
+    .ingredient-section {
+        padding: 1.25rem 1rem;
+    }
+
+    .ingredient-section h2 {
+        font-size: 2rem;
+    }
+
+    .chip-wrapper{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .chip{
+        padding: 0.625rem 1rem;
+    }
+
+    .explore-section {
+        padding: 1.25rem 1rem;
+    }
+
+    .explore-section h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .footer-section {
+        padding: 1.25rem 1rem;
+    }
+
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    .recipe-chip {
+        min-width: 100%;
+    }
+
+    .ingredient-section p {
+        width: 100%;
+    }
+
+    .content-wrapper h3 {
+        font-size: 1.2rem;
+    }
+
+    .recipe-card-wrapper {
+        width: 100%;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+}
