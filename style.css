@@ -787,7 +787,7 @@ button:active {
     }
 }
 
-@media (min-width: 370px) {
+@media (min-width: 350px) {
 
    .search-button{
         width: fit-content;
