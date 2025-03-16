@@ -722,7 +722,13 @@ button:active {
         padding: 5rem 1rem;
     }
 
+    .pop-recipe-section h2 {
+        font-size: 2rem;
+        
+    }
+
     .ingredient-section {
+        height: auto;
         padding: 1.25rem 1rem;
     }
 
