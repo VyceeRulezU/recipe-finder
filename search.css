@@ -192,7 +192,7 @@ button:active {
 
 .ingredient-section{
     display: flex;
-    height: 40vh;
+    height: 50vh;
     padding: 2.5rem 5rem;
     flex-direction: column;
     justify-content: center;
@@ -415,6 +415,7 @@ button:active {
 
     .header-content {
         width: 100%;
+        height: auto;
     }
 
     .recipe-group {
@@ -487,7 +488,9 @@ button:active {
     }
 
     .ingredient-section {
-        padding: 1.25rem 1rem;
+        padding: 5rem 1rem;
+        height: auto;
+
     }
 
     .ingredient-section h2 {
