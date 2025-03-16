@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const recipeContainer = document.querySelector(".recipe-container");
     const recipeDetails = document.querySelector(".recipe-detials");
+    const backButton = document.getElementById("backButton");
 
     // Function to get query parameter from URL
     function getQueryParam(name) {
@@ -55,6 +56,19 @@ document.addEventListener("DOMContentLoaded", function () {
             <h3>Instructions:</h3>
             <p>${meal.strInstructions}</p>
         `;
+    }
+
+     // Handle Back button
+     if (backButton) {
+        backButton.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            if (document.referrer) {
+                window.history.back(); // Go back to last page
+            } else {
+                window.location.href = "index.html"; // Fallback to home page
+            }
+        });
     }
 
     // Get recipe ID from URL and fetch details
