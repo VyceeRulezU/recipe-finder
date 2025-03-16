@@ -490,7 +490,7 @@ button:active {
     .ingredient-section {
         padding: 5rem 1rem;
         height: auto;
-
+        border: none;
     }
 
     .ingredient-section h2 {
