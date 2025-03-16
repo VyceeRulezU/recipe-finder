@@ -103,7 +103,7 @@
     border: none;
     padding: 10px 15px;
     cursor: pointer;
-    margin-left: 20px;
+    
     border-radius: 5px;
 }
 
@@ -114,10 +114,11 @@
     position: absolute;
     top: 60px;
     right: 0;
-    width: 200px;
+    width: auto;
     background: #222;
     padding: 15px;
     border-radius: 5px;
+    margin-right: 0.8rem;
 }
 
 .mobile-link {
@@ -159,6 +160,7 @@
     }
 
     .mobile-menu.active {
+        margin-right: 0.8rem;
         display: flex;
     }
 }
